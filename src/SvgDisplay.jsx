@@ -57,6 +57,7 @@ const SvgDisplay = () => {
         case "Tab":
           e.preventDefault();
           inputRef.current.focus();
+          break;
         default:
       }
     } else {
@@ -124,7 +125,7 @@ const SvgDisplay = () => {
             label="Only UN states"
             onChange={(e) => setOnlyUN(!onlyUN)}
           />
-          <img src={`http://localhost:5000/svgs/${svg}`} alt={svg} style={{ width: "500px", height: "400px" }} />
+          <img id="mainImage" src={`http://localhost:5000/svgs/${svg}`} alt={svg} />
           {showAnswer ? (
             <span>
               <a

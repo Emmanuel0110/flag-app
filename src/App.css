@@ -47,6 +47,11 @@ body {
   height: 80px;
 }
 
+#mainImage {
+  width: 500px;
+  height: 370px;
+}
+
 .score {
   position: absolute;
   font-size: 2em;
